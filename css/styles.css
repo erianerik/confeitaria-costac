@@ -1,0 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+/* font-family: 'Rouge Script', cursive; */
+
+@import url(./components/nav.css);
+@import url(./components/home.css);
