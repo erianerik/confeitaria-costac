@@ -1,9 +1,21 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--color-white);
+    background-image: url(../../img/home-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .main__home {
     width: 100%;
-    height: calc(100vh - 93px);
+    min-height: calc(100vh - 93px);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1.1em;
 }
 
 .home__header {
@@ -11,21 +23,27 @@
 }
 
 .header__introduction {
-    font-size: 1.7rem;
+    font-size: clamp(1.8rem, 1rem + 1vw, 2.5rem);
     text-shadow: var(--text-shadow);
 }
 
 .costac-title--home {
-    font-size: 9rem;
-    margin-block: 1.6rem
+    font-size: clamp(5rem, 1rem + 5vw, 10rem);
+    margin-block: 1.6rem;
 }
 
 .header__description {
-    width: 75%;
+    max-width: 75%;
     line-height: 1.6em;
     margin-inline: auto;
     margin-bottom: 1em;
-    font-size: 1.2rem;
+    font-size: clamp(1.5rem, 1rem + 1vw, 2rem);
     overflow-wrap: break-word;
     text-shadow: var(--text-shadow);
+}
+
+@media screen and (max-width: 30em) {
+    .header__description {
+        max-width: 95%;
+    }
 }
